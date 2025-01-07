@@ -5,10 +5,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Global Talk</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline bg-green-500 text-red-400">
-      Hello world!
-    </h1>
+    <!-- header///////////////////// -->
+    <header>
+      <div
+        class="border-2 border-black-200 bg-[#f6f5f4] flex justify-between items-center px-6 py-4"
+      >
+        <!-- Globaltalk logo//////////////////  -->
+        <div class="flex gap-8">
+          <div>
+            <h1
+              class="text-3xl font-black italic sm:text-base font-medium md:text-lg font-semibold lg:text-xl font-bold xl:text-3xl font-black italic"
+            >
+              GlobalTalk
+            </h1>
+          </div>
+          <!-- border between//// -->
+          <div class="border-r-2"></div>
+          <!-- nav-items////////// -->
+          <div>
+            <ul
+              class="text-xl font-medium text-gray-500 flex gap-x-5 sm:text-sm font-extralight md:text-base font-light lg:text-lg font-normal xl:text-xl font-medium text-gray-500"
+            >
+              <li><a href="#home" class="hover:text-black">Home</a></li>
+              <li><a href="#textbook" class="hover:text-black">Textbook</a></li>
+              <li>
+                <a href="#statictic" class="hover:text-black">Statistic</a>
+              </li>
+              <li>
+                <a href="#games" class="hover:text-black"
+                  >Games<i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ALEX and sign out/////////////////// -->
+        <div class="flex items-center gap-x-4">
+          <div class="flex items-center gap-1">
+            <p
+              class="font-bold text-xl text-[#2b788b] bg-[#c3dce3] w-12 h-12 rounded-full flex items-center justify-center"
+            >
+              A
+            </p>
+            <p class="font-extrabold text-lg text-gray-500">Alex</p>
+          </div>
+          <a
+            href="#sign out"
+            class="hover:text-green-900 hover:underline font-extrabold text-lg"
+            >Sign Out <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- main/////////////////////// -->
+    <main>
+      <!-- hero-section////////////////////////////////// -->
+
+      <section>
+        <div class="flex justify-center py-20 w-full bg-[#f6f5f4] gap-8">
+          <!-- text///////////////////////// -->
+          <div class="flex flex-col w-[50%] pl-12">
+            <!-- first line//// -->
+            <div>
+              <p class="text-[#2b788b] text-xl font-semibold">
+                E-COURCE PLATFORM
+              </p>
+            </div>
+            <!-- 2nd line////// -->
+            <div class="pt-3">
+              <span class="text-5xl font-extrabold italc"
+                >Learning and teaching online, made easy.</span
+              >
+            </div>
+            <!-- 3rd line/////// -->
+            <div class="pt-4">
+              <p class="text-gray-500 text-xl font-semibold w-[70%]">
+                practice your English and learn new things with the platform.
+              </p>
+            </div>
+            <!-- button//////// -->
+            <div class="pt-4">
+              <button
+                class="text-[#2b788b] text-lg font-bold bg-[#c3dce3] rounded-3xl w-[12rem] h-[3rem] hover:text-white hover:bg-[#2b788b]"
+              >
+                About platform
+              </button>
+            </div>
+            <div class="flex pt-5 gap-x-8">
+              <!-- 600 popular words -->
+              <div>
+                <div
+                  class="text-4xl font-bold flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-bolt text-2xl text-[#2b788b]"></i
+                  >600<span class="text-[#2b788b] text-extrabold font-black"
+                    >+</span
+                  >
+                </div>
+                <div class="text-md font-medium text-gray-500">
+                  popular words
+                </div>
+              </div>
+              <!-- border between 2 divs/////////// -->
+              <div class="border-r-2 h-14"></div>
+              <!-- mini games button ////////// -->
+              <div>
+                <div
+                  class="text-4xl font-bold flex justify-center items-center"
+                >
+                  <img
+                    src="assets/images/plusdot.png"
+                    alt="img"
+                    class="flex h-7"
+                  />2
+                  <span class="text-[#2b788b] text-extrabold font-black"
+                    >+</span
+                  >
+                </div>
+                <div class="text-md font-medium text-gray-500">Mini games</div>
+              </div>
+            </div>
+          </div>
+          <!-- boy image//////////////////////// -->
+          <div>
+            <img
+              src="assets/images/Frame 24.png"
+              alt="boy img"
+              class="h-96 bg-[#f6f5f4]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Learn a language in a playful way (1st page)  ///////////// -->
+      <div class="flex pt-10 w-[100%]">
+        <div class="w-[65%]">
+          <img src="assets/images/image 8.png" alt="girl image" />
+        </div>
+        <div class="flex flex-col pt-20 fix-content">
+          <h1 class="text-4xl font-extrabold italc">
+            Learn a language in a playful way
+          </h1>
+          <p class="text-gray-500 text-xl font-semibold pt-8 w-[80%]">
+            Make learning words more fun with mini-games
+          </p>
+
+          <div class="flex gap-5 py-10">
+            <div class="shoes-box"></div>
+            <div>
+              <img src="assets/images/image 10.png" alt="shoes" class="shoes" />
+            </div>
+            <h1 class="shoes-text">
+              Sprint<i class="fa-solid fa-arrow-right"></i>
+            </h1>
+
+            <div class="speaker-box"></div>
+            <div>
+              <img
+                src="assets/images/image 11.png"
+                alt="loud speaker"
+                class="speaker"
+              />
+            </div>
+            <h1 class="speaker-text">
+              Audio-call<i class="fa-solid fa-arrow-right"></i>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- Increase your vocabulary (2nd page) //////////// -->
+
+      <div class="flex bg-[#f4f4f2] pt-10 justify-center items-center">
+        <div class="p-10">
+          <h1 class="text-4xl font-extrabold">Increase your vocabulary</h1>
+          <p class="text-gray-500 text-xl font-semibold pt-8">
+            Traditional and new effective approaches to word study
+          </p>
+          <div class="pt-10">
+            <button
+              class="text-[#2b788b] text-lg font-bold bg-[#c3dce3] rounded-3xl w-[9rem] h-[3rem] hover:text-white hover:bg-[#2b788b]"
+            >
+              Textbook <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/image 2.png" alt="girlwith books" />
+        </div>
+      </div>
+      <!-- Watch your progress every day(3rd page) /////////////-->
+      <div class="flex pt-10 justify-center items-center">
+        <div class="pl-10">
+          <img src="assets/images/image 1.png" alt="students learning" />
+        </div>
+        <div class="p-10 pr-10 w-[50%]">
+          <h1 class="text-4xl font-extrabold w-[80%]">
+            Watch your progress every day
+          </h1>
+          <p class="text-gray-500 text-xl font-semibold pt-8">
+            Save statistics on your achievements, words
+          </p>
+          <p class="text-gray-500 text-xl font-semibold">
+            learned, and mistakes
+          </p>
+          <div class="pt-10">
+            <button
+              class="text-[#2b788b] text-lg font-bold bg-[#c3dce3] rounded-3xl w-[9rem] h-[3rem] hover:text-white hover:bg-[#2b788b]"
+            >
+              Statistic<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Sprit(4th page)/////////////////// -->\
+
+      <!-- background Div//////////////// -->
+      <div
+        class="border-2 border-[#f6f5f4]-200 bg-[#f6f5f4] w-[100%] h-auto px-20 py-10"
+      >
+        <div class="bg-[#ffffff] rounded-xl">
+          <!-- image//////////////// -->
+          <div>
+            <img src="assets/images/image 30.png" alt="girl run" />
+          </div>
+          <!-- text////////////////// -->
+          <div>
+            <h1>Sprit</h1>
+            <p>
+              Trains the skill of fast translation. You have to choose if the
+              translation corresponds to the suggested word.
+            </p>
+            <h2>Choose a level:</h2>
+            <div></div>
+            <div>
+              <button
+                class="border-2 border-[#2b788b] text-white text-md font-bold bg-[#2b788b] rounded-3xl w-[8rem] h-[2.5rem] hover:text-[#2b788b] hover:bg-white hover:flex flex-col items-center justify-center"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
