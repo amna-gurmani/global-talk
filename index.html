@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- header///////////////////// -->
-    <header>
+    <header class="sm:hidden">
       <div
         class="border-2 border-black-200 bg-[#f6f5f4] flex justify-between items-center px-6 py-4"
       >
@@ -24,7 +24,7 @@
         <div class="flex gap-8">
           <div>
             <h1
-              class="text-3xl font-black italic sm:text-base font-medium md:text-lg font-semibold lg:text-xl font-bold xl:text-3xl font-black italic"
+              class="text-3xl font-black italic"
             >
               GlobalTalk
             </h1>
@@ -32,9 +32,9 @@
           <!-- border between//// -->
           <div class="border-r-2"></div>
           <!-- nav-items////////// -->
-          <div>
+          <div class="sm:hidden">
             <ul
-              class="text-xl font-medium text-gray-500 flex gap-x-5 sm:text-sm font-extralight md:text-base font-light lg:text-lg font-normal xl:text-xl font-medium text-gray-500"
+              class="text-xl font-medium text-gray-500 flex gap-x-5 "
             >
               <li><a href="#home" class="hover:text-black">Home</a></li>
               <li><a href="#textbook" class="hover:text-black">Textbook</a></li>
@@ -68,9 +68,45 @@
       </div>
     </header>
 
+<!-- media query for sm ///////////////////// ///////////////////////////////////-->
+
+  <!-- header///////////////////// -->
+  <header>
+    <div
+      class="border-2 border-black-200 bg-[#f6f5f4] flex gap-20 items-center px-6 py-4"
+    >
+    <!-- toggle button /////////////////////// -->
+    <div>
+      <div class="sm:border-2 border-black w-[2rem] mb-1"></div>
+      <div class="sm:border-2 border-black w-[1.5rem] mb-1"></div>
+      <div class="sm:border-2 border-black w-[1rem] "></div>
+    </div>
+        
+      <!-- Globaltalk logo//////////////////  -->
+        <div>
+          <h1
+            class="text-2xl font-black italic"
+          >
+            GlobalTalk
+          </h1>
+        </div>
+       
+      <!-- ALEX and sign out/////////////////// -->
+      
+        <div class="flex items-center gap-1">
+          <p
+            class="font-bold text-xl text-[#2b788b] bg-[#c3dce3] w-12 h-12 rounded-full flex items-center justify-center"
+          >
+            A
+          </p>
+          <p class="font-extrabold text-lg text-gray-500">Alex<i class="fa-solid fa-angle-down"></i></p>
+        </div>
+    </div>
+  </header>
+
     <!-- main/////////////////////// -->
     <main>
-      <!-- hero-section////////////////////////////////// -->
+      <!-- hero-section//////////////////////// -->
 
       <section>
         <div class="flex justify-center py-20 w-full bg-[#f6f5f4] gap-8">
@@ -147,6 +183,89 @@
           </div>
         </div>
       </section>
+
+<!-- media query for sm ////////////////////////////////////////////////////// -->
+    
+  <!-- main/////////////////////// -->
+    <main>
+      <!-- hero-section//////////////////////// -->
+
+      <section>
+        <div class="flex justify-center py-20 w-full bg-[#f6f5f4] gap-8">
+          <!-- text///////////////////////// -->
+          <div class="flex flex-col w-[50%] pl-12">
+            <!-- first line//// -->
+            <div>
+              <p class="text-[#2b788b] text-xl font-semibold">
+                E-COURCE PLATFORM
+              </p>
+            </div>
+            <!-- 2nd line////// -->
+            <div class="pt-3">
+              <span class="text-5xl font-extrabold italc"
+                >Learning and teaching online, made easy.</span
+              >
+            </div>
+            <!-- 3rd line/////// -->
+            <div class="pt-4">
+              <p class="text-gray-500 text-xl font-semibold w-[70%]">
+                practice your English and learn new things with the platform.
+              </p>
+            </div>
+            <!-- button//////// -->
+            <div class="pt-4">
+              <button
+                class="text-[#2b788b] text-lg font-bold bg-[#c3dce3] rounded-3xl w-[12rem] h-[3rem] hover:text-white hover:bg-[#2b788b]"
+              >
+                About platform
+              </button>
+            </div>
+            <div class="flex pt-5 gap-x-8">
+              <!-- 600 popular words -->
+              <div>
+                <div
+                  class="text-4xl font-bold flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-bolt text-2xl text-[#2b788b]"></i
+                  >600<span class="text-[#2b788b] text-extrabold font-black"
+                    >+</span
+                  >
+                </div>
+                <div class="text-md font-medium text-gray-500">
+                  popular words
+                </div>
+              </div>
+              <!-- border between 2 divs/////////// -->
+              <div class="border-r-2 h-14"></div>
+              <!-- mini games button ////////// -->
+              <div>
+                <div
+                  class="text-4xl font-bold flex justify-center items-center"
+                >
+                  <img
+                    src="assets/images/plusdot.png"
+                    alt="img"
+                    class="flex h-7"
+                  />2
+                  <span class="text-[#2b788b] text-extrabold font-black"
+                    >+</span
+                  >
+                </div>
+                <div class="text-md font-medium text-gray-500">Mini games</div>
+              </div>
+            </div>
+          </div>
+          <!-- boy image//////////////////////// -->
+          <div>
+            <img
+              src="assets/images/Frame 24.png"
+              alt="boy img"
+              class="h-96 bg-[#f6f5f4]"
+            />
+          </div>
+        </div>
+      </section>
+
 
       <!--1st section under hero-section ///////////// -->
       <section class="flex pt-10 w-[100%]">
@@ -228,7 +347,7 @@
           </div>
         </div>
       </section>
-      <!-- 4th section/////////////////// -->\
+      <!-- 4th section/////////////////// -->
 
       <!-- background section //////////////// -->
       <section
@@ -305,9 +424,9 @@
       <!-- 5th section/////////////////// -->
 
       <!-- bakground div'///////////////////////////// -->
-      <div
-        class="border-2 border-[#f6f5f4] bg-[#f6f5f4] w-[100%] h-auto flex gap-5 px-5 py-10"
-      >
+      <section
+        class="border-2 border-[#f6f5f4] bg-[#f6f5f4] w-[100%] h-auto flex gap-5 px-3 py-10"
+       >
         <!--  part-1 /////////////////// -->
         <div
           class="bg-white w-[35%] h-auto rounded-xl py-10 flex flex-col justify-center items-center"
@@ -353,19 +472,760 @@
           </div>
         </div>
         <!-- part-2/////////////////////////// -->
-        <div class="bg-white rounded-xl w-[60%] h-auto my-10">
-          <div class="flex gap-2 pt-12">
-            <h1 class="text-4xl font-extrabold">I Know</h1>
+        <div
+          class="bg-white rounded-xl w-[60%] h-auto my-10 flex justify-between px-3"
+        >
+          <!-- 1 ////////////////// -->
+          <div>
+            <div class="flex gap-2 py-6">
+              <h1 class="text-4xl font-extrabold">I Know</h1>
+              <button
+                class="text-[#2b788b] text-sm font-medium bg-[#c3dce3] mt-4 rounded-md w-[5rem] h-[1.5rem] hover:text-white hover:bg-[#2b788b]"
+              >
+                15 words
+              </button>
+            </div>
+            <!-- overflow list -1//////////////////// -->
+            <div class="overflow-y-auto h-[65%]">
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">lone</span>-solitaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">anniversary</span>-anniversaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">lone</span>-solitaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">anniversary</span>-anniversaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">lone</span>-solitaire
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 ///////////////////// -->
+          <div>
+            <div class="flex gap-2 py-6">
+              <h1 class="text-3xl font-extrabold">I don't Know</h1>
+              <button
+                class="text-[#2b788b] text-sm font-medium bg-[#c3dce3] mt-4 rounded-md w-[5rem] h-[1.5rem] hover:text-white hover:bg-[#2b788b]"
+              >
+                15 words
+              </button>
+            </div>
+            <!-- overflow list -2//////////////////// -->
+            <div class="overflow-y-auto h-[65%]">
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">lone</span>-solitaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">anniversary</span>-anniversaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">lone</span>-solitaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">anniversary</span>-anniversaire
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center pt-2">
+                <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                  <i class="fa-sharp fa-solid fa-music"></i>
+                </div>
+                <p class="text-gray-500 font-semibold text-lg">
+                  <span class="text-black">lone</span>-solitaire
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6th section///////////////////////// -->
+
+      <section
+        class="bg-[#f6f5f4] flex flex-col justify-center items-center gap-8 py-20"
+       >
+        <div>
+          <div class="relative w-[9rem] h-auto">
+            <img src="assets/images/food.png " alt="food" />
+          </div>
+          <div class="absolute top-[208rem] left-[24.5rem]">
             <button
-              class="text-[#2b788b] text-sm font-medium bg-[#c3dce3] mt-4 rounded-md w-[5rem] h-[1.5rem] hover:text-white hover:bg-[#2b788b]"
+              class="flex bg-[#ffffff] w-[14rem] h-[3.5rem] gap-3 justify-center items-center rounded-full"
             >
-              15 words
+              <div class="text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-md">
+                <i class="fa-sharp fa-solid fa-music"></i>
+              </div>
+              <p class="text-gray-500 font-semibold text-lg">
+                <span class="text-black">food</span>-nourriture
+              </p>
             </button>
           </div>
         </div>
+        <div class="text-4xl font-extrabold flex gap-5">
+          <i class="fa-solid fa-heart text-[#945069]"></i>
+          <i class="fa-solid fa-heart text-[#945069]"></i>
+          <i class="fa-solid fa-heart text-[#945069]"></i>
+          <i class="fa-solid fa-heart text-[#945069]"></i>
+          <i class="fa-solid fa-heart text-[#f1d3db]"></i>
+        </div>
+        <div class="flex gap-5">
+          <button
+            class="border-[3px] border-[#c4c4c4] font-semibold text-gray-500 w-[10rem] h-[2.5rem] rounded-3xl"
+          >
+            prêt hypothécaire
+          </button>
+          <button
+            class="border-[3px] border-[#c4c4c4] font-semibold text-gray-500 w-[5rem] h-[2.5rem] rounded-3xl"
+          >
+            correct
+          </button>
+          <button
+            class="border-[3px] border-[#945069] font-semibold text-[#945069] w-[8rem] h-[2.5rem] rounded-3xl"
+          >
+            selon laquelle
+          </button>
+          <button
+            class="border-[3px] border-[#c4c4c4] font-semibold text-gray-500 w-[4rem] h-[2.5rem] rounded-3xl"
+          >
+            citer
+          </button>
+          <button
+            class="border-[3px] border-[#2b788b] font-semibold text-[#2b788b] w-[6rem] h-[2.5rem] rounded-3xl"
+          >
+            nourriture
+          </button>
+        </div>
+        <div>
+          <button
+            class="text-[#2b788b] text-lg font-bold bg-[#c3dce3] rounded-3xl w-[9rem] h-[3rem] hover:text-white hover:bg-[#2b788b]"
+          >
+            I don't know
+          </button>
+        </div>
+        <div>
+          <p class="text-gray-500 text-xl font-semibold">
+            <span class="text-[#945069]">*</span>You can also use
+            <span class="border-2 border-[#ffffff] bg-[#ffffff] w-10 rounded-lg"
+              >1-5</span
+            >
+            keys on the keyboard
+          </p>
+        </div>
+      </section>
+      <!-- 7th section///////////////// -->
+      <section
+      class="border-2 border-[#f6f5f4] bg-[#f6f5f4] w-full h-auto px-32 py-10"
+    >
+      <div class="bg-[#ffffff] rounded-xl flex  py-10 px-20 ">
+        <!-- image//////////////// -->
+        <div class="w-[300px] h-auto">
+          <img src="assets/images/image 54 (2).png" height="auto" max-width="100%" alt="girl run" />
+        </div>
+        <!-- text////////////////// -->
+         <div>
+        <div class="flex gap-2 pt-8">
+          <h1 class="text-5xl font-extrabold">Alex</h1>
+          <button
+            class="text-[#2b788b] text-sm font-medium bg-[#c3dce3] mt-4 rounded-md w-[5rem] h-[1.5rem] hover:text-white hover:bg-[#2b788b]"
+          >
+          github
+          </button>
+        </div>
+        <p class="text-gray-500 text-xl font-semibold w-[115%] pt-5">
+          Made design, api queries, statistics, sprint game, did some layout and supervised development.
+        </p>
+        </div>
+         
+        </div>
       </div>
-    </main>
+    </section>
+        <!-- 8th section/////////////////// -->
 
-    <footer></footer>
+      <!-- background section //////////////// -->
+      <section
+      class="border-2 border-[#f6f5f4] bg-[#f6f5f4] w-full h-auto px-32 py-10"
+    >
+      <div class="bg-[#ffffff] rounded-xl flex py-10 px-20 ">
+        <!-- image//////////////// -->
+        <div class="w-[400px] h-auto">
+          <img src="assets/images/image 54.png" height="auto" max-width="100%" alt="girl run" />
+        </div>
+        <!-- text////////////////// -->
+        <div>
+          <div class="flex pt-8">
+            <h1 class="text-5xl font-extrabold">Gabrial
+            </h1>
+            <button
+              class="text-[#2b788b] text-sm font-medium bg-[#c3dce3] mt-4 rounded-md w-[5rem] h-[1.5rem] hover:text-white hover:bg-[#2b788b]"
+            >
+            github
+            </button>
+          </div>
+          <p class="text-gray-500 text-xl font-semibold  pt-5">
+            Authorization / registration module, Audio Challenge game, collection of statistics, routing, typing of the studied words.
+          </p>
+        </div>
+           
+        </div>
+        
+      </section>
+     
+    <!-- 9th section/////////////////// -->
+
+      <!-- background section //////////////// -->
+      <section
+        class="border-2 border-[#f6f5f4] bg-[#f6f5f4] w-full h-auto px-32 py-10"
+      >
+        <div class="bg-[#ffffff] rounded-xl flex  py-10 px-20 ">
+          <!-- image//////////////// -->
+          <div class="w-[300px] h-auto">
+            <img src="assets/images/image 54.png" height="auto" max-width="100%" alt="girl run" />
+          </div>
+          <!-- text////////////////// -->
+        <div>
+          <div class="flex pt-8">
+            <h1 class="text-5xl font-extrabold">Marcus</h1>
+            <button
+              class="text-[#2b788b] text-sm font-medium bg-[#c3dce3] mt-4 rounded-md w-[5rem] h-[1.5rem] hover:text-white hover:bg-[#2b788b]"
+            >
+            github
+            </button>
+          </div>
+          <p class="text-gray-500 text-xl font-semibold  pt-5">
+            Made the application home page, e-textbook, layout, and adaptive.
+          </p>
+        </div>
+           
+        </div>
+        
+      </section>
+
+      <!-- 10th section/////////////////// -->
+
+      <!-- background section //////////////// -->
+      <section
+        class="border-2 border-[#f6f5f4] bg-[#f6f5f4] w-[100%] h-auto px-20 py-10"
+      >
+      <!-- text side//////////////// -->
+      <div class="bg-[#ffffff] rounded-xl flex justify-between py-4 px-3 w-[100%]">
+        <div class="flex gap-2">
+        <div class="flex gap-2  items-center ">
+         <div>
+            <i class="fa-solid fa-graduation-cap text-2xl"></i>
+          </div>
+          <h1 class="text-3xl font-extrabold">Textbook</h1>
+        </div>
+        <div class="border"></div>
+        <div class="flex gap-2 items-center text-gray-500">
+          <div>
+           <i class="fa-solid fa-book-open text-2xl"></i>
+          </div>
+          <h1 class=" text-3xl font-extrabold">Dictionary</h1>
+        </div>
+      </div>
+      <!-- button side///////// -->
+        <div class="flex gap-3">
+         <!-- pink button//////////// -->
+          <div>
+          <button
+            class="text-[#945069] text-lg font-bold bg-[#f2d4dc] rounded-lg w-[9rem] h-[3rem] hover:text-white hover:bg-[#945069]"
+          >
+            I don't know
+          </button>
+        </div>
+        <!-- blue button /////////////s -->
+        <div>
+          <button
+            class="text-[#2b788b] text-lg font-bold bg-[#c3dce3] rounded-lg w-[9rem] h-[3rem] hover:text-white hover:bg-[#2b788b]"
+          >
+            I dont know
+          </button>
+        </div>
+        <!-- setting button/////// -->
+          <div>
+            <i class="fa-solid fa-gear text-lg text-[#bababa] bg-[#f6f5f4] rounded-sm hover:bg-[#bababa] hover:text-white p-2"></i>
+          </div>
+        </div>
+        
+      </div>
+      </section>
+
+      <!-- section 11th/////////////////// -->
+
+      <section class="flex justify-center items-center bg-[#f6f5f4] gap-16 px-28 ">
+       
+
+        <!-- A1 /////////////////// -->
+         
+        <div class="flex gap-2 justify-center items-center hover:border-b-4 border-black hover:h-[40px]">
+            <h1 class="text-gray-500 text-3xl font-extrabold hover:text-black">A1</h1>
+            <button
+              class="text-[#639b6d] text-sm font-medium bg-[#cadacb] rounded-sm w-[3rem] h-[1.5rem] hover:text-white hover:bg-[#639b6d]"
+            >
+            Easy
+            </button>
+          </div>
+          
+
+          <!-- A2 ///////////// -->
+          <div class="hover:underline">
+            <div class="flex gap-2 justify-center items-center ">
+                <h1 class="text-gray-500 text-3xl font-extrabold hover:text-black">A2</h1>
+                <button
+                  class="text-[#639b6d] text-sm font-medium bg-[#cadacb] rounded-sm w-[3rem] h-[1.5rem] hover:text-white hover:bg-[#639b6d]"
+                >
+                Easy
+                </button>
+              </div>
+              </div>
+
+        <!-- B1 ////////////////////// -->
+        <div class="hover:underline">
+          <div class="flex gap-2 justify-center items-center ">
+              <h1 class="text-gray-500 text-3xl font-extrabold hover:text-black">B1</h1>
+              <button
+                class="text-[#639b6d] text-sm font-medium bg-[#cadacb] rounded-sm w-[3rem] h-[1.5rem] hover:text-white hover:bg-[#639b6d]"
+              >
+              Easy
+              </button>
+            </div>
+            </div>
+
+        <!-- B2 //////////////////// -->
+        <div class="hover:underline">
+          <div class="flex gap-2 justify-center items-center ">
+              <h1 class="text-gray-500 text-3xl font-extrabold hover:text-black">B2</h1>
+              <button
+                class="text-[#639b6d] text-sm font-medium bg-[#cadacb] rounded-sm w-[3rem] h-[1.5rem] hover:text-white hover:bg-[#639b6d]"
+              >
+              Easy
+              </button>
+            </div>
+            </div>
+
+        <!-- C1 //////////// -->
+        <div class="hover:underline">
+          <div class="flex gap-2 justify-center items-center ">
+              <h1 class="text-gray-500 text-3xl font-extrabold hover:text-black">C1</h1>
+              <button
+                class="text-[#639b6d] text-sm font-medium bg-[#cadacb] rounded-sm w-[3rem] h-[1.5rem] hover:text-white hover:bg-[#639b6d]"
+              >
+              Easy
+              </button>
+            </div>
+            </div>
+
+        <!-- C2 ////////////////////// -->
+        <div class="hover:underline">
+          <div class="flex gap-2 justify-center items-center ">
+              <h1 class="text-gray-500 text-3xl font-extrabold hover:text-black">C2</h1>
+              <button
+                class="text-[#639b6d] text-sm font-medium bg-[#cadacb] rounded-sm w-[3rem] h-[1.5rem] hover:text-white hover:bg-[#639b6d]"
+              >
+              Easy
+              </button>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- cards section//////////// -->
+
+      <section class="flex flex-wrap justify-center gap-3 bg-[#f6f5f4] pt-8 p-4">
+
+        <!-- card = 01 //////////////////// -->
+         <div>
+        <!-- imge////////////// -->
+        <div>
+          <img src="assets/images/image 55(boy).png" class="w-[19rem] h-[8rem] rounded-t-xl" alt="">
+        </div>
+
+        <!-- text ////////////// -->
+        <div class=" bg-white w-[19rem] flex flex-col gap-2 p-4 rounded-b-xl">
+
+      <div>
+      <div class="flex justify-between">
+        <h1 class=" text-3xl font-extrabold">remark</h1>
+        <i class="fa-sharp fa-solid fa-music text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-sm"></i>
+      </div>
+      <div>
+        <h1 class=" text-3xl font-extrabold text-gray-500">note</h1>
+      </div>
+    </div>
+        <div class="flex gap-3">
+          <h1 class="font-semibold">[rimar:rk]</h1>
+          <button
+                class="text-white border-2 border-[#cb5b43] text-sm font-medium bg-[#cb5b43] rounded-sm w-[5rem] h-[2rem] hover:text-[#cb5b43] hover:bg-white"
+              >
+              Compound
+              </button>
+        </div>
+        <div  class="font-semibold">
+          <p>To remark is to say something. - Remarquer,</p>
+          <p>c'est dire quelque chose</p>
+        </div>
+        
+        <div class="border-b-2 w-[full]"></div>
+        <div>
+          <p class="font-semibold text-gray-500">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+        </div>
+        <div>
+          <button  class="text-white border-2 border-[#639b6d] text-md font-semibold bg-[#639b6d] rounded-3xl w-[9rem] h-[3rem] hover:text-[#639b6d] hover:bg-white">
+            Add to learned
+          </button>
+        </div>
+        <div>
+          <button  class="text-[#cb5b43] text-md font-semibold bg-[#efcdc6] rounded-3xl w-[14rem] h-[3rem] hover:text-white hover:bg-[#cb5b43]">
+            Remove from dictionary
+          </button>
+        </div>
+      </div>
+    </div>
+
+       <!-- card = 02 //////////////////// -->
+       <div>
+        <!-- imge////////////// -->
+        <div>
+          <img src="assets/images/image 55(boy).png" class="w-[19rem] h-[8rem] rounded-t-xl" alt="">
+        </div>
+
+        <!-- text ////////////// -->
+        <div class=" bg-white w-[19rem] flex flex-col gap-2 p-4 rounded-b-xl">
+
+      <div>
+      <div class="flex justify-between">
+        <h1 class=" text-3xl font-extrabold">remark</h1>
+        <i class="fa-sharp fa-solid fa-music text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-sm"></i>
+      </div>
+      <div>
+        <h1 class=" text-3xl font-extrabold text-gray-500">note</h1>
+      </div>
+    </div>
+        <div class="flex gap-3">
+          <h1 class="font-semibold">[rimar:rk]</h1>
+          <button
+                class="text-white border-2 border-[#cb5b43] text-sm font-medium bg-[#cb5b43] rounded-sm w-[5rem] h-[2rem] hover:text-[#cb5b43] hover:bg-white"
+              >
+              Compound
+              </button>
+        </div>
+        <div  class="font-semibold">
+          <p>To remark is to say something. - Remarquer,</p>
+          <p>c'est dire quelque chose</p>
+        </div>
+        
+        <div class="border-b-2 w-[full]"></div>
+        <div>
+          <p class="font-semibold text-gray-500">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+        </div>
+        <div>
+          <button  class="text-white border-2 border-[#639b6d] text-md font-semibold bg-[#639b6d] rounded-3xl w-[9rem] h-[3rem] hover:text-[#639b6d] hover:bg-white">
+            Add to learned
+          </button>
+        </div>
+        <div>
+          <button  class="text-[#cb5b43] text-md font-semibold bg-[#efcdc6] rounded-3xl w-[14rem] h-[3rem] hover:text-white hover:bg-[#cb5b43]">
+            Remove from dictionary
+          </button>
+        </div>
+      </div>
+    </div>
+
+       <!-- card = 03 //////////////////// -->
+       <div>
+        <!-- imge////////////// -->
+        <div>
+          <img src="assets/images/image 55(boy).png" class="w-[19rem] h-[8rem] rounded-t-xl" alt="">
+        </div>
+
+        <!-- text ////////////// -->
+        <div class=" bg-white w-[19rem] flex flex-col gap-2 p-4 rounded-b-xl">
+
+      <div>
+      <div class="flex justify-between">
+        <h1 class=" text-3xl font-extrabold">remark</h1>
+        <i class="fa-sharp fa-solid fa-music text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-sm"></i>
+      </div>
+      <div>
+        <h1 class=" text-3xl font-extrabold text-gray-500">note</h1>
+      </div>
+    </div>
+        <div class="flex gap-3">
+          <h1 class="font-semibold">[rimar:rk]</h1>
+          <button
+                class="text-white border-2 border-[#cb5b43] text-sm font-medium bg-[#cb5b43] rounded-sm w-[5rem] h-[2rem] hover:text-[#cb5b43] hover:bg-white"
+              >
+              Compound
+              </button>
+        </div>
+        <div  class="font-semibold">
+          <p>To remark is to say something. - Remarquer,</p>
+          <p>c'est dire quelque chose</p>
+        </div>
+        
+        <div class="border-b-2 w-[full]"></div>
+        <div>
+          <p class="font-semibold text-gray-500">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+        </div>
+        <div>
+          <button  class="text-white border-2 border-[#639b6d] text-md font-semibold bg-[#639b6d] rounded-3xl w-[9rem] h-[3rem] hover:text-[#639b6d] hover:bg-white">
+            Add to learned
+          </button>
+        </div>
+        <div>
+          <button  class="text-[#cb5b43] text-md font-semibold bg-[#efcdc6] rounded-3xl w-[14rem] h-[3rem] hover:text-white hover:bg-[#cb5b43]">
+            Remove from dictionary
+          </button>
+        </div>
+      </div>
+    </div>
+
+       <!-- card = 04 //////////////////// -->
+       <div>
+        <!-- imge////////////// -->
+        <div>
+          <img src="assets/images/image 55(boy).png" class="w-[19rem] h-[8rem] rounded-t-xl" alt="">
+        </div>
+
+        <!-- text ////////////// -->
+        <div class=" bg-white w-[19rem] flex flex-col gap-2 p-4 rounded-b-xl">
+
+      <div>
+      <div class="flex justify-between">
+        <h1 class=" text-3xl font-extrabold">remark</h1>
+        <i class="fa-sharp fa-solid fa-music text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-sm"></i>
+      </div>
+      <div>
+        <h1 class=" text-3xl font-extrabold text-gray-500">note</h1>
+      </div>
+    </div>
+        <div class="flex gap-3">
+          <h1 class="font-semibold">[rimar:rk]</h1>
+          <button
+                class="text-white border-2 border-[#cb5b43] text-sm font-medium bg-[#cb5b43] rounded-sm w-[5rem] h-[2rem] hover:text-[#cb5b43] hover:bg-white"
+              >
+              Compound
+              </button>
+        </div>
+        <div  class="font-semibold">
+          <p>To remark is to say something. - Remarquer,</p>
+          <p>c'est dire quelque chose</p>
+        </div>
+        
+        <div class="border-b-2 w-[full]"></div>
+        <div>
+          <p class="font-semibold text-gray-500">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+        </div>
+        <div>
+          <button  class="text-white border-2 border-[#639b6d] text-md font-semibold bg-[#639b6d] rounded-3xl w-[9rem] h-[3rem] hover:text-[#639b6d] hover:bg-white">
+            Add to learned
+          </button>
+        </div>
+        <div>
+          <button  class="text-[#cb5b43] text-md font-semibold bg-[#efcdc6] rounded-3xl w-[14rem] h-[3rem] hover:text-white hover:bg-[#cb5b43]">
+            Remove from dictionary
+          </button>
+        </div>
+      </div>
+    </div>
+
+       <!-- card = 05 //////////////////// -->
+       <div>
+        <!-- imge////////////// -->
+        <div>
+          <img src="assets/images/image 55(boy).png" class="w-[19rem] h-[8rem] rounded-t-xl" alt="">
+        </div>
+
+        <!-- text ////////////// -->
+        <div class=" bg-white w-[19rem] flex flex-col gap-2 p-4 rounded-b-xl">
+
+      <div>
+      <div class="flex justify-between">
+        <h1 class=" text-3xl font-extrabold">remark</h1>
+        <i class="fa-sharp fa-solid fa-music text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-sm"></i>
+      </div>
+      <div>
+        <h1 class=" text-3xl font-extrabold text-gray-500">note</h1>
+      </div>
+    </div>
+        <div class="flex gap-3">
+          <h1 class="font-semibold">[rimar:rk]</h1>
+          <button
+                class="text-white border-2 border-[#cb5b43] text-sm font-medium bg-[#cb5b43] rounded-sm w-[5rem] h-[2rem] hover:text-[#cb5b43] hover:bg-white"
+              >
+              Compound
+              </button>
+        </div>
+        <div  class="font-semibold">
+          <p>To remark is to say something. - Remarquer,</p>
+          <p>c'est dire quelque chose</p>
+        </div>
+        
+        <div class="border-b-2 w-[full]"></div>
+        <div>
+          <p class="font-semibold text-gray-500">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+        </div>
+        <div>
+          <button  class="text-white border-2 border-[#639b6d] text-md font-semibold bg-[#639b6d] rounded-3xl w-[9rem] h-[3rem] hover:text-[#639b6d] hover:bg-white">
+            Add to learned
+          </button>
+        </div>
+        <div>
+          <button  class="text-[#cb5b43] text-md font-semibold bg-[#efcdc6] rounded-3xl w-[14rem] h-[3rem] hover:text-white hover:bg-[#cb5b43]">
+            Remove from dictionary
+          </button>
+        </div>
+      </div>
+    </div>
+
+       <!-- card = 06 //////////////////// -->
+       <div>
+        <!-- imge////////////// -->
+        <div>
+          <img src="assets/images/image 55(boy).png" class="w-[19rem] h-[8rem] rounded-t-xl" alt="">
+        </div>
+
+        <!-- text ////////////// -->
+        <div class=" bg-white w-[19rem] flex flex-col gap-2 p-4 rounded-b-xl">
+
+      <div>
+      <div class="flex justify-between">
+        <h1 class=" text-3xl font-extrabold">remark</h1>
+        <i class="fa-sharp fa-solid fa-music text-[#bababa] bg-[#f6f5f4] text-xl p-2 rounded-sm"></i>
+      </div>
+      <div>
+        <h1 class=" text-3xl font-extrabold text-gray-500">note</h1>
+      </div>
+    </div>
+        <div class="flex gap-3">
+          <h1 class="font-semibold">[rimar:rk]</h1>
+          <button
+                class="text-white border-2 border-[#cb5b43] text-sm font-medium bg-[#cb5b43] rounded-sm w-[5rem] h-[2rem] hover:text-[#cb5b43] hover:bg-white"
+              >
+              Compound
+              </button>
+        </div>
+        <div  class="font-semibold">
+          <p>To remark is to say something. - Remarquer,</p>
+          <p>c'est dire quelque chose</p>
+        </div>
+        
+        <div class="border-b-2 w-[full]"></div>
+        <div>
+          <p class="font-semibold text-gray-500">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
+        </div>
+        <div>
+          <button  class="text-white border-2 border-[#639b6d] text-md font-semibold bg-[#639b6d] rounded-3xl w-[9rem] h-[3rem] hover:text-[#639b6d] hover:bg-white">
+            Add to learned
+          </button>
+        </div>
+        <div>
+          <button  class="text-[#cb5b43] text-md font-semibold bg-[#efcdc6] rounded-3xl w-[14rem] h-[3rem] hover:text-white hover:bg-[#cb5b43]">
+            Remove from dictionary
+          </button>
+        </div>
+      </div>
+    </div>
+      </section>
+    </main>
+    
+<!-- footer ////////////////////////////// -->
+    <footer>
+      <!-- section 01 ///////////////////// -->
+      <section class="text-xl font-medium text-gray-500 flex gap-x-5 flex justify-between px-10 py-5 bg-[#f6f5f4]">
+      <!-- nav-items////////// -->
+      <div >
+        <ul class="flex gap-5">
+          <li>Home</li>
+          <li>Textbook</li>
+          <li>Statistic</li>
+          <li>Sprit</li>
+          <li>Audio-call</li>
+        </ul>
+      </div>
+  
+    <!-- ALEX and other items/////////////////// -->
+    <div>
+      <ul class="flex gap-5">
+        <li>Alex</li>
+        <li>Gabriel</li>
+        <li>Marcus</li>
+      </ul>
+    </div>
+      </section>
+<!-- section 02 border //////////////////////// -->
+    <section class="bg-[#f6f5f4]">
+      <div class="mx-5 border-b-2 border-[#bababa]"></div>
+    </section>
+<!-- section 03 //////////////////////////////// -->
+      <section class="bg-[#f6f5f4] flex justify-between px-10 pt-5 pb-10">
+        <div>
+        <ul class="flex gap-10">
+          <li><img src="assets/images/github.png" alt="image"></li>
+          <li><img src="assets/images/GT.png" alt="image"></li>
+          <li><img src="assets/images/youtube.png" alt="youtube logo"></li>
+        </ul>
+      </div>
+      <div class="text-sm font-medium text-gray-500">
+        <span>©2021 GlobalTalk. Project for </span>
+        <span>GlobalTalk.</span>
+      </div>
+      </section>
+    </footer>
   </body>
 </html>
